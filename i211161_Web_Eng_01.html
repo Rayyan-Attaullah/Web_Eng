@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap" rel="stylesheet">
+
+    <title>Job Listing</title>
+
+</head>
+
+
+<body >
+
+
+    <div class="header_div">
+
+        <img class="header-img" src="images/bg-header-desktop.svg" alt="Job Image">
+
+        <div id="job-details-popup" class="job-popup">
+        </div>
+        
+   
+    </div>
+ 
+    <div class="filter-buttons">
+        <label for="filter-role">Role:</label>
+        <select id="filter-role" class="filter-select" data-filter="role">
+          <option value="Frontend">Frontend</option>
+          <option value="Backend">Backend</option>
+          <option value="Fullstack">Fullstack</option>
+        </select>
+      
+        <label for="filter-level">Level:</label>
+        <select id="filter-level" class="filter-select" data-filter="level">
+          <option value="Junior">Junior</option>
+          <option value="Midweight">Midweight</option>
+          <option value="Senior">Senior</option>
+        </select>
+      
+        <label for="filter-languages">Languages:</label>
+        <select id="filter-languages" class="filter-select" data-filter="languages">
+          <option value="HTML">HTML</option>
+          <option value="CSS">CSS</option>
+          <option value="JavaScript">JavaScript</option>
+          <option value="Ruby">Ruby</option>
+          <option value="Python">Python</option>
+        </select>
+      
+        <label for="filter-tools">Tools:</label>
+        <select id="filter-tools" class="filter-select" data-filter="tools">
+          <option value="React">React</option>
+          <option value="Sass">Sass</option>
+          <option value="Vue">Vue</option>
+          <option value="RoR">RoR</option>
+          <option value="Django">Django</option>
+        </select>
+      </div>
+      
+
+
+
+    <div class="main-content"  id="job-list-container">
+
+        <div class="job-card1">
+
+            <img class="profile-img" src="images/photosnap.svg" alt="Job Image">
+
+            <div class="job-description">
+                
+                <div class="job-info1">
+
+                  <p>Photosnap</p>
+                  <button class="b1">News!</button>
+                  <button class="b2">Featured</button>
+
+               </div>
+
+               <div class="job-title">
+
+                <p>Senior Frontend Developer</p>
+    
+
+                </div>
+
+                <div class="job-info2">
+
+                    <p>1d ago</p>
+                    <p>&#183;</p>
+                    <p>Full time</p>
+                    <p>&#183;</p>
+                    <p> USA only</p>
+                  
+
+                </div>
+
+            </div>
+
+            <div class="job-tags">
+
+
+                <div class="tags">
+                   <button>Frontend</button>
+                   <button>Senior</button>
+                   <button>HTML</button>
+                   <button>CSS</button>
+                   <button>JavaScript</button>
+                   
+                </div>
+
+              
+                   
+
+                <div>
+                    
+                </div>
+    
+            </div>
+
+           
+
+        </div>
+
+   
+         <button id="add-job-button" class="add-button">+</button>
+         <button id="delete-job-button" class="delete-button">-</button>
+                
+        
+ 
+</div>
+
+
+            <form id="add-job-form">
+                   <label for="job-image">Job Image:</label>
+                   <input type="file" id="job-image" name="job-image">
+                  <br>
+                   <label for="company">Company:</label>
+                  <input type="text" id="company" name="company" required value="Photosnap">
+                     <br>
+                   <label for="role">Role:</label>
+                    <input type="text" id="role" name="role" required value="Frontend">
+                     <br>
+                    <label for="level">Level:</label>
+                   <input type="text" id="level" name="level" required value="Senior">
+                   <br>
+                   <label for="posted-at">Posted At:</label>
+                     <input type="text" id="posted-at" name="posted-at" required value="1d ago">
+                   <br>
+                   <label for="contract">Contract:</label>
+                    <input type="text" id="contract" name="contract" required value="Full Time">
+                      <br>
+                       <label for="location">Location:</label>
+                    <input type="text" id="location" name="location" required value="USA Only">
+                      <br>
+                  <label for="languages">Languages:</label>
+                   <input type="text" id="languages" name="languages" required value="HTML, CSS, JavaScript">
+                    <br>
+                    <label for="tools">Tools:</label>
+                   <input type="text" id="tools" name="tools" required>
+                    <br>
+                     <button  type="submit">Add Job</button>
+
+                     <button class="close-button" type="button">&#10006; Close</button>
+             </form>
+
+          
+
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="script.js"></script>
+
+</body>
+
+
+</html>

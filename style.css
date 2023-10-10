@@ -1,0 +1,374 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(180, 52%, 96%);
+    font-size: 15px;
+    
+}
+
+
+
+.header_div {
+    background-size: 100% 20vh; 
+    width: 100%;
+    height: 17vh;
+    background-color: darkcyan;
+}
+
+
+
+.job-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+
+.filter-select {
+    background-color: darkcyan;
+    margin-top: 10px;
+    color: white;
+    padding: 8px 16px 8px 16px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  
+  .filter-select:hover {
+    background-color: #008080;
+  }
+  
+  
+  .filter-select option {
+    background-color: darkcyan;
+    color: white;
+  }
+  
+  
+  .filter-select option:hover {
+    background-color: #008080;
+  }
+  
+.header-img {
+    height: 17vh;
+    width: 100%;
+}
+
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.job-card1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12vh;
+    background-color: white;
+    height: auto; 
+    width: 70%;
+    padding: 20px; 
+    border-radius: 4pt;
+   
+}
+
+.job-card2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4vh;
+    background-color: white;
+    height: auto; 
+    width: 70%;
+    padding: 20px; 
+    border-radius: 4pt;
+}
+
+.job-card1:hover {
+
+    background-color:rgb(178, 223, 223);
+   
+}
+
+.job-card2:hover {
+
+    background-color:rgb(178, 223, 223);
+   
+}
+
+
+.profile-img{
+
+       width: 60pt;
+
+      
+}
+
+.job-description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-grow: 1; 
+    margin-top: 5px;
+    margin-left: 10pt;
+}
+
+
+.job-description > * {
+    margin-bottom: 10px; 
+}
+
+
+
+.job-info1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 700;
+}
+
+.job-info1 p {
+    font-family: 'League Spartan', sans-serif;
+   
+    color: darkcyan;
+}
+
+.job-info1 .b1 {
+
+    font-family: 'League Spartan', sans-serif;
+    background-color: darkcyan;
+    color: hsl(180, 52%, 96%);
+    margin-left: 5pt;
+    height: 20pt;
+    width: 40pt;
+    border-radius: 10pt;
+    border: none;
+}
+
+.job-info1 .b1:hover{
+
+    background-color: hsl(180, 52%, 96%);
+    color: darkcyan;
+}
+
+.job-info1 .b2 {
+
+    font-family: 'League Spartan', sans-serif;
+    background-color: black;
+    color: hsl(180, 52%, 96%);
+    margin-left: 5pt;
+    height: 20pt;
+    width: 50pt;
+    border-radius: 10pt;
+    border: none;
+}
+
+.job-info1 .b2:hover{
+
+    background-color:hsl(180, 52%, 96%);
+    color: black;
+}
+
+.job-title{
+
+     font-weight: 700;
+}
+
+.job-title p{
+    font-family: 'League Spartan', sans-serif;
+    color:darkcyan;
+    font-size: 14pt;
+  
+}
+
+
+.job-tags {
+    display: flex;
+    flex-direction: row; 
+    align-items: flex-end; 
+    padding-right: 0; 
+}
+
+.tags{
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+     width: 100%;
+}
+.tags button {
+    font-family: 'League Spartan', sans-serif;
+    margin-right: 15pt; 
+    align-self: flex-end; 
+    border: none; 
+    width:50pt;
+    height: 20pt;
+    color: darkcyan;
+    background-color: hsl(180, 52%, 96%);
+    font-weight: 700;
+}
+
+.tags button:hover {
+    color: hsl(180, 52%, 96%);
+    background-color: darkcyan;
+    cursor: pointer; 
+}
+
+
+
+.job-info2 {
+
+    font-family: 'League Spartan', sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(149, 142, 142);
+    font-weight: 500;
+}
+
+.job-info2 p {
+    
+    margin-right: 7pt; 
+}
+
+
+
+.add-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: darkcyan;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.add-button:hover {
+    background-color: #008080; 
+}
+
+
+.delete-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px; 
+    background-color: #ff4b4b; 
+    color: white; 
+    border: none;
+    padding: 5px 10px; 
+    cursor: pointer;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; 
+    transition: background-color 0.3s ease; 
+}
+
+
+.delete-button:hover {
+    background-color: #ff0000; 
+}
+
+
+
+/* Add Job Form Styles */
+#add-job-form {
+
+    display:none;
+    background-color: white;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  
+  #add-job-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  #add-job-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid hsl(180, 31%, 95%);
+    border-radius: 5px;
+  }
+  
+  #add-job-form button[type="submit"] {
+    background-color: hsl(180, 29%, 50%);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #add-job-form button[type="submit"]:hover {
+    background-color: hsl(180, 31%, 45%);
+  }
+
+
+
+
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: darkcyan;
+}
+
+.close-button:hover {
+    color: #008080;
+}
+
+
+  
+
+
+
+
